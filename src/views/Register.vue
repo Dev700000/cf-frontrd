@@ -83,7 +83,7 @@ const handleRegister = async () => {
   loading.value = true
 
   try {
-    const response = await fetch('http://localhost:8000/api/register/', {
+    const response = await fetch('https://cf-backend-production-36f0.up.railway.app/api/register/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

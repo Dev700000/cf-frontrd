@@ -102,7 +102,7 @@ const handleSubmit = async () => {
     }
 
     const token = localStorage.getItem('token')
-    const response = await fetch('http://localhost:8000/api/negocio/', {
+    const response = await fetch('https://cf-backend-production-36f0.up.railway.app/api/negocio/', {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${token}`,

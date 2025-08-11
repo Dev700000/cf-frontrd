@@ -51,7 +51,7 @@ const router = useRouter()
 
 const handleLogin = async () => {
   try {
-    const response = await fetch('http://localhost:8000/api/login/', {
+    const response = await fetch('https://cf-backend-production-36f0.up.railway.app/api/login/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

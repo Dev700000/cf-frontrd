@@ -214,7 +214,7 @@ export default {
     },
     async obtenerPerfil() {
       try {
-        const response = await axios.get('http://127.0.0.1:8000/api/perfil/', {
+        const response = await axios.get('https://cf-backend-production-36f0.up.railway.app/api/perfil/', {
           headers: {
             Authorization: `Bearer ${this.token}`
           }
@@ -236,7 +236,7 @@ export default {
     },
     async guardarCambios() {
       try {
-        await axios.patch('http://127.0.0.1:8000/api/perfil/', {
+        await axios.patch('https://cf-backend-production-36f0.up.railway.app/api/perfil/', {
           business_name: this.perfil.business_name,
           business_type: this.perfil.business_type,
           business_description: this.perfil.business_description,

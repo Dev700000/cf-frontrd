@@ -134,7 +134,7 @@ const token = localStorage.getItem('token')
 
 const cargarDatosNegocio = async () => {
   try {
-    const response = await fetch('http://localhost:8000/api/perfil/', {
+    const response = await fetch('https://cf-backend-production-36f0.up.railway.app/api/perfil/', {
       headers: { Authorization: `Bearer ${token}` }
     })
     if (!response.ok) throw new Error('No se pudo cargar los datos del negocio')
@@ -153,7 +153,7 @@ const cargarDatosNegocio = async () => {
 
 const cargarTiposNegocio = async () => {
   try {
-    const res = await fetch('http://localhost:8000/api/business-types/', {
+    const res = await fetch('https://cf-backend-production-36f0.up.railway.app/api/business-types/', {
       headers: { Authorization: `Bearer ${token}` }
     })
     if (!res.ok) throw new Error('No se pudo cargar los tipos de negocio')
@@ -205,7 +205,7 @@ const generarPublicacion = async () => {
   copiado.value = false // Reset estado de copiado
   loading.value = true
   try {
-    const response = await fetch('http://localhost:8000/api/crear-publicacion/', {
+    const response = await fetch('https://cf-backend-production-36f0.up.railway.app/api/crear-publicacion/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
