@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Dashboard from '../views/Dashboard.vue'
 import Perfil from '../views/Perfil.vue'
-import Login from '../views/login.vue'
+import Login from '../views/Login.vue'
 import Publicar from '../views/Publicar.vue'
 import MisPublicaciones from '../views/MisPublicaciones.vue'
 import Register from '../views/Register.vue'
